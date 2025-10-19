@@ -1,11 +1,11 @@
 name: Deploy to InfinityFree
 
+# Run manually or on push to the main branch
 on:
   workflow_dispatch:
   push:
     branches:
-      
-main
+      - main
 
 jobs:
   deploy:
@@ -14,18 +14,16 @@ jobs:
 
     steps:
       # Step 1: Clone the latest code from GitHub
-      
-name: Get latest code
-      uses: actions/checkout@v4
+      - name: Get latest code
+        uses: actions/checkout@v4
 
       # Step 2: Upload code via FTP
-      
-name: Deploy to InfinityFree via FTP
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-      with:
-        server: ftpupload.net
-        username: if0_40189438
-        password: yLpB89oUo5iwUhO
-        server-dir: /htdocs/  # For addon domains
-        timeout: 86400000
-        log-level: standard
+      - name: Deploy to InfinityFree via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ftpupload.net
+          username: if0_40189438
+          password: yLpB89oUo5iwUhO
+          server-dir: /htdocs/  # For addon domains
+          timeout: 86400000
+          log-level: standard
