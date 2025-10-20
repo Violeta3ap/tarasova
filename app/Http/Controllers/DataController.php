@@ -16,7 +16,7 @@ class DataController extends Controller
 
             return view('allData', ['Darbinieki' => $Darbinieki->orderBy('id', 'asc' )->get()]);
 
-   }
+    }
 
    public function delete($id)
     {
