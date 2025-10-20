@@ -6,7 +6,7 @@
 
         <a href="/data" class="btn" style="background-color: #ddb0cfff; color: black;">Atgriezties</a>
 
- 
+ <div style="display: flex; flex-wrap: wrap; gap: 16px;">
 @foreach ($Darbinieki as $item)
  
     <div style="background:#e49ecf; color: white; width: 400px;" class="card mt-3">
