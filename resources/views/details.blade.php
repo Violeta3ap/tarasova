@@ -4,6 +4,9 @@
 
 @section('content')
     <h2>Detalizētie dati</h2>
+      <div class="d-flex justify-content mt-4">
+        <a href="/data/allData" class="btn" style="background-color: #ddb0cfff; color: black;">Atgriezties</a>
+    </div>
     <div class="d-flex justify-content-center">
         <div class="alert alert-danger mt-4" style="width: 400px; background:#e49ecf; color: white;">
             <h3>ID: {{$Darbinieki->id}}</h3>
@@ -14,9 +17,7 @@
             <a class="btn btn-light" href="/data/allData/{{ $Darbinieki->id }}/delete">Dzēst</a>
         </div>
     </div>
-    <div class="d-flex justify-content-end mt-4">
-        <a href="/data/allData" class="btn" style="background-color: #ddb0cfff; color: black;">Atgriezties</a>
-    </div>
+  
     <style>
         body {
             background-color: #dfc3d6ff;

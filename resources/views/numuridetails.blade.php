@@ -4,6 +4,9 @@
 
 @section('content')
     <h2>Detalizētie dati</h2>
+        <div class="d-flex justify-content-end mt-4">
+        <a href="/data/numuri" class="btn" style="background-color: #ddb0cfff; color: black;">Atgriezties</a>
+    </div>
     <div class="d-flex justify-content-center mt-4">
         <div class="alert alert-danger" style="width: 400px; background:#e49ecf; color: white;">
             <h3>ID: {{$numuri->id}}</h3>
