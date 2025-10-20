@@ -8,6 +8,7 @@
 
 
 
+ <div style="display: flex; flex-wrap: wrap; gap: 16px;">
 @foreach ($data as $item)
  
     <div style="background:#e49ecf; color: white; width: 400px;" class="card mt-3">
@@ -30,7 +31,7 @@
         </div>
     </div>
 @endforeach
-
+</div>
 
     
     <div class="d-flex justify-content-end">
