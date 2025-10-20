@@ -83,7 +83,7 @@
 
 
 
-<form action="/data/klienti/{{ $klienti->id }}/editt" method="post">
+<form action="/data/klienti/{{ $klienti->id }}/edit" method="post">
     @csrf
 
       <div style="text-align: center;">
