@@ -20,7 +20,7 @@
 
 
 
-<form action="/data/allData/{{ $data->id }}/editt" method="post">
+<form action="/data/allData/{{ $Darbinieki->id }}/editt" method="post">
     @csrf
 
       <div style="text-align: center;">
@@ -30,14 +30,14 @@
     <div class="container" style= "max-width: 40%">
     
 <!--id pārsūtīšana--> 
-<input type="hidden" value="{{ $data->id }}"  id="id" name="id">  
+<input type="hidden" value="{{ $Darbinieki->id }}"  id="id" name="id">  
 
 <div class= "mb-3">
     <label for="Vards" class="form-label"> Vārds </label>
-    <input type= "text" class="form-control" value="{{$data->Vards}}" id="Vards" name="Vards" placeholder="Ievadiet vārdu">
+    <input type= "text" class="form-control" value="{{$Darbinieki->Vards}}" id="Vards" name="Vards" placeholder="Ievadiet vārdu">
 
      <label for="Uzards" class="form-label"> Uzvārds </label>
-    <input type= "text" class="form-control" value="{{$data->Uzards}}" id="Uzards" name="Uzards" placeholder="Ievadiet uzvārdu">
+    <input type= "text" class="form-control" value="{{$Darbinieki->Uzards}}" id="Uzards" name="Uzards" placeholder="Ievadiet uzvārdu">
 
 
 
