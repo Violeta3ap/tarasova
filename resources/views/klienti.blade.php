@@ -10,6 +10,7 @@
     
 
  
+ <div style="display: flex; flex-wrap: wrap; gap: 16px;">
 @foreach ($data as $item)
  
 
@@ -32,7 +33,7 @@
         </div>
     </div>
 @endforeach
-
+   </div>
 
     
     <div class="d-flex justify-content-end">
