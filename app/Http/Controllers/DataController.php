@@ -15,6 +15,7 @@ class DataController extends Controller
             //dd($data->all());
 
             return view('allData', ['Darbinieki' => $Darbinieki->orderBy('id', 'asc' )->get()]);
+     
 
     }
 
