@@ -91,7 +91,16 @@ public function NewSubmit(Request $dati)
 
 
 
+public function new()
+    {     
+      $types = DB::table('type')->get();
+      // dd($types->get());
 
+
+      return view('contacts', ['types' =>$types ]);
+
+     
+    }
 
 
 };

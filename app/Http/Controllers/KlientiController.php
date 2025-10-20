@@ -97,7 +97,16 @@ return redirect()->to('/data/klienti')->with('success', 'Ieraksts tika izmainīt
 
 
 
+public function new()
+    {     
+      $types = DB::table('type')->get();
+      // dd($types->get());
 
+
+      return view('contacts', ['types' =>$types ]);
+
+     
+    }
 
 
 };

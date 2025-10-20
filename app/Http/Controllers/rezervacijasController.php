@@ -104,6 +104,15 @@ return redirect()->to('/data/rezervacijas')->with('success', 'Ieraksts tika izma
 
 
 
+public function new()
+    {     
+      $types = DB::table('type')->get();
+      // dd($types->get());
 
+
+      return view('contacts', ['types' =>$types ]);
+
+     
+    }
 
 };
