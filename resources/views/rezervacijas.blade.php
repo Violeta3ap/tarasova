@@ -33,10 +33,7 @@
 @endforeach
 </div>
 
-    
-    <div class="d-flex justify-content-end">
-        <a href="/data" class="btn" style="background-color: #ddb0cfff; color: black;">Atgriezties</a>
-    </div>
+
 
 
     <style>
