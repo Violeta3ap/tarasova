@@ -30,7 +30,7 @@
     <div class="container" style= "max-width: 40%">
     
 <!--id pārsūtīšana--> 
-<input type="hidden" value="{{ $data->id }}"  id="id" name="id">  
+<input type="hidden" value="{{ $klienti->id }}"  id="id" name="id">  
 
 <div class= "mb-3">
     <label for="Vards" class="form-label"> Vārds </label>

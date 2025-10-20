@@ -46,7 +46,7 @@ Route::get('/data/klienti/{id}/delete', 'App\Http\Controllers\KlientiController@
 Route::get('/data/klienti/{id}/details', 'App\Http\Controllers\KlientiController@details');
 
 Route::post('/data/NewSubmit', 'App\Http\Controllers\KlientiController@NewSubmit');
-Route::get('/data/klienti/{id}/editklienti', 'App\Http\Controllers\KlientiController@edit');
+Route::get('/data/klienti/{id}/kedit', 'App\Http\Controllers\KlientiController@edit');
 //maršrutu izmaiņu sagl
 Route::post('/data/klienti/{id}/editSumbit', 'App\Http\Controllers\KlientiController@editSumbit');
 

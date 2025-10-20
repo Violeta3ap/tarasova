@@ -74,7 +74,7 @@ public function NewSubmit(Request $klienti)
 
 
 
-  public function edit($id)
+  public function kedit($id)
   {
     $klienti = new klienti;
     return view('klientiedit', ['klienti' => $klienti->find($id)]);
