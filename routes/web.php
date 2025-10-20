@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
  use App\Http\Controllers\KlientiController;
   use App\Http\Controllers\DataController;
+   use App\Http\Controllers\numuriController;
+  use App\Http\Controllers\rezervacijasController;
  
 Route::get('/', function () {
     return view('home');
@@ -30,7 +32,7 @@ Route::get('/data/allData/{id}/details', 'App\Http\Controllers\DataController@de
  //   return dd(Request::all());
 //});s
 Route::post('/data/NewSubmit', 'App\Http\Controllers\DataController@NewSubmit');
-Route::post('/data/allData/{id}/editt', 'App\Http\Controllers\DataController@editSumbit');
+
 Route::get('/data/allData/{id}/edit', 'App\Http\Controllers\DataController@edit');
 //maršrutu izmaiņu sagl
 Route::post('/data/allData/{id}/editSumbit', 'App\Http\Controllers\DataController@editSumbit');
