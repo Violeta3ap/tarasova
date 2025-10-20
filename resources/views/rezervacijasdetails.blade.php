@@ -4,7 +4,7 @@
 
 @section('content')
     <h2>Detalizētie dati</h2>
-        <div class="d-flex justify-content-end mt-4">
+        <div class="d-flex justify-content mt-4">
         <a href="/data/rezervacijas" class="btn" style="background-color: #ddb0cfff; color: black;">Atgriezties</a>
     </div>
     <div class="d-flex justify-content-center">
