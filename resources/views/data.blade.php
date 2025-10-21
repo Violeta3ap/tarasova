@@ -4,7 +4,7 @@
  
 <div class="d-flex justify-content-center">
 
-    <a href="/data/allData" class="btn btn-success mx-2" style="background-color: #ddb0cfff; border: none; color: black;">
+    <a href="/data/darbinieki" class="btn btn-success mx-2" style="background-color: #ddb0cfff; border: none; color: black;">
         Dati par darbiniekiem
     </a>
 
