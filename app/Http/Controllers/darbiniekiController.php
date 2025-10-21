@@ -85,7 +85,8 @@ $darbinieki=darbinieki::find($id);
 $darbinieki->Vards = $darbinieki->input('Vārds');
 $darbinieki->Uzvards = $darbinieki->input('Uzvārds');
 $darbinieki->save();
-return redirect()->to('/data/darbinieki')->with('success', 'Ieraksts tika izmainīts');
+dd($darbinieki);
+return redirect('/data/darbinieki')->with('success', 'Ieraksts tika izmainīts');
 
  }  
 
