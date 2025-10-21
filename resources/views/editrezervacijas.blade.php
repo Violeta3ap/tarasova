@@ -34,18 +34,18 @@
 
 <div class= "mb-3">
     <label for="NumuraID" class="form-label"> Numura ID </label>
-    <input type= "text" class="form-control" value="{{$rezervacijas->NumuraID}}" id="NumuraID" name="NumuraID" placeholder="Ievadiet numura ID">
+    <input type= "number" class="form-control" value="{{$rezervacijas->NumuraID}}" id="NumuraID" name="NumuraID" placeholder="Ievadiet numura ID">
 
     <label for="KlientaID" class="form-label"> Klienta ID </label>
-    <input type= "text" class="form-control" value="{{$rezervacijas->KlientaID}}" id="KlientaID" name="KlientaID" placeholder="Ievadiet klienta ID">
+    <input type= "number" class="form-control" value="{{$rezervacijas->KlientaID}}" id="KlientaID" name="KlientaID" placeholder="Ievadiet klienta ID">
 
 
 
  <label for="IebrauksanasDatums" class="form-label"> Iebraukšanas datums </label>
-    <input type= "text" class="form-control" value="{{$rezervacijas->IebrauksanasDatums}}" id="IebrauksanasDatums" name="IebrauksanasDatums" placeholder="Ievadiet iebraukšanas datumu">
+    <input type= "date" class="form-control" value="{{$rezervacijas->IebrauksanasDatums}}" id="IebrauksanasDatums" name="IebrauksanasDatums" placeholder="Ievadiet iebraukšanas datumu">
 
     <label for="IzbrauksanasDatums" class="form-label"> Izbraukšanas datums </label>
-    <input type= "text" class="form-control" value="{{$rezervacijas->IzbrauksanasDatums}}" id="IzbrauksanasDatums" name="IzbrauksanasDatums" placeholder="Ievadiet izbraukšanas datumu">
+    <input type= "date" class="form-control" value="{{$rezervacijas->IzbrauksanasDatums}}" id="IzbrauksanasDatums" name="IzbrauksanasDatums" placeholder="Ievadiet izbraukšanas datumu">
 
 <label for="RezervacijasStatuss" class="form-label"> Rezervācijas statuss </label>
     <input type= "text" class="form-control" value="{{$rezervacijas->RezervacijasStatuss}}" id="RezervacijasStatuss" name="RezervacijasStatuss" placeholder="Ievadiet rezervācijas statusu">
@@ -53,7 +53,7 @@
 
 
      <label for="DarbiniekaID" class="form-label"> Darbinieka ID </label>
-    <input type= "text" class="form-control" value="{{$rezervacijas->DarbiniekaID}}" id="DarbiniekaID" name="DarbiniekaID" placeholder="Ievadiet darbinieka ID">
+    <input type= "number" class="form-control" value="{{$rezervacijas->DarbiniekaID}}" id="DarbiniekaID" name="DarbiniekaID" placeholder="Ievadiet darbinieka ID">
 
 
 

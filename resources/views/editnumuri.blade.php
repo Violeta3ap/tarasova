@@ -37,7 +37,7 @@
     <input type= "text" class="form-control" value="{{$numuri->Tips}}" id="Tips" name="Tips" placeholder="Ievadiet tipu">
 
      <label for="CenaParNakti" class="form-label"> Cena par nakti </label>
-    <input type= "text" class="form-control" value="{{$numuri->CenaParNakti}}" id="CenaParNakti" name="CenaParNakti" placeholder="Ievadiet cenu par nakti">
+    <input type= "number" class="form-control" value="{{$numuri->CenaParNakti}}" id="CenaParNakti" name="CenaParNakti" placeholder="Ievadiet cenu par nakti">
 
 
 
