@@ -73,7 +73,7 @@ public function NewSubmit(Request $darbinieki)
   public function edit($id)
   {
     $darbinieki = new darbinieki;
-    return view('darbiniekiedit', ['darbinieki' => $darbinieki->find($id)]);
+    return view('editdarbinieki', ['darbinieki' => $darbinieki->find($id)]);
   }
 
 
