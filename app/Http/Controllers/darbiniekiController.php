@@ -50,7 +50,7 @@ class darbiniekiController extends Controller
 
 
 
-  public function NewSubmit(Request $darbinieki)
+  public function NewSubmit(Request $darbiniekis)
   {
     $darbinieki->validate([
         'Vards' => 'required|min:3|max:15',
@@ -59,8 +59,8 @@ class darbiniekiController extends Controller
 
     //datu sagl
     $darbinieki = new darbinieki();
-    $darbinieki->Vards = $darbinieki->input('Vārds');
-    $darbinieki->Uzvards = $darbinieki->input('Uzvārds');
+    $darbinieki->Vards = $darbiniekis->input('Vārds');
+    $darbinieki->Uzvards = $darbiniekis->input('Uzvārds');
     $darbinieki->save();
 
     return redirect('/contact')->with('success', 'Ieraksts pievienots');
@@ -77,12 +77,12 @@ class darbiniekiController extends Controller
   }
 
 
-  public function editSumbit(Request $darbinieki, $id)
+  public function editSumbit(Request $darbiniekis, $id)
   {   
     $darbinieki=darbinieki::find($id);
     
-    $darbinieki->Vards = $darbinieki->input('Vards');
-    $darbinieki->Uzvards = $darbinieki->input('Uzvards');
+    $darbinieki->Vards = $darbiniekis->input('Vards');
+    $darbinieki->Uzvards = $darbiniekis->input('Uzvards');
     $darbinieki->save();
     return redirect('/data/darbinieki')->with('success', 'Ieraksts tika izmainīts');
 
