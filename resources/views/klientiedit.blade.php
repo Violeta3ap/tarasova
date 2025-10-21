@@ -24,7 +24,7 @@
     @csrf
 
       <div style="text-align: center;">
-    <h1> Rediģēt ziņojumu</h1>
+    <h1> Rediģēt </h1>
 
 
     <div class="container" style= "max-width: 40%">
