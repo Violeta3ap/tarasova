@@ -14,7 +14,7 @@
             <p>Uzvārds: {{$klienti->Uzvards}}</p>
             <p>E-pasts: {{$klienti->Epasts}}</p>
             <p>Telefona numurs: {{$klienti->TelefonaNumurs}}</p>
-            <a class="btn btn-light" href="/data/klienti/{{ $klienti->id }}/edit">Rediģēt</a>
+            <a class="btn btn-light" href="/data/klienti/{{ $klienti->id }}/editklienti">Rediģēt</a>
             <a class="btn btn-light" href="/data/klienti/{{ $klienti->id }}/delete">Dzēst</a>
         </div>
     </div>

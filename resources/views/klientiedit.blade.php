@@ -33,19 +33,16 @@
 <input type="hidden" value="{{ $klienti->id }}"  id="id" name="id">  
 
 <div class= "mb-3">
-    <label for="name" class="form-label"> Vārds </label>
-    <input type= "text" class="form-control" value="{{$klienti->name}}" id="name" name="name" placeholder="Ievadiet vārdu">
+    <label for="Vards" class="form-label"> Vārds </label>
+    <input type= "text" class="form-control" value="{{$klienti->Vards}}" id="Vards" name="Vards" placeholder="Ievadiet vārdu">
 
-     <label for="subject" class="form-label"> Tēma </label>
-    <input type= "text" class="form-control" value="{{$klienti->subject}}" id="subject" name="subject" placeholder="Ievadiet Tēmu">
+     <label for="Uzvards" class="form-label"> Uzvārds </label>
+    <input type= "text" class="form-control" value="{{$klienti->Uzvards}}" id="Uzvards" name="Uzvards" placeholder="Ievadiet uzvārdu">
 
 
 </div>
 
-<div class= "mb-3">
-    <label for="message" class="form-label"> Ziņojuma teksts </label>
-    <textarea class="form-control"  id="message" name="message" rows="3" >{{$klienti->message}} </textarea>
-</div>
+
 
 <button type="submit" class="btn btn-primary">Saglabāt izmaiņas</button>
 <a href="/data/klienti"  class="btn btn-danger">Atcelt</a>
