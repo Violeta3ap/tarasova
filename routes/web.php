@@ -46,7 +46,7 @@ Route::post('/data/allData/{id}/editSumbit', 'App\Http\Controllers\DataControlle
 Route::get('/data/klienti', 'App\Http\Controllers\KlientiController@showAllData');
 //Maršruti klienti dzēšanai
 Route::get('/data/klienti/{id}/delete', 'App\Http\Controllers\KlientiController@delete');
-Route::get('/data/klienti/{id}/details', 'App\Http\Controllers\KlientiController@details');
+Route::get('/data/klienti/{id}/klientidetails', 'App\Http\Controllers\KlientiController@details');
 
 Route::post('/data/NewSubmit', 'App\Http\Controllers\KlientiController@NewSubmit');
 Route::get('/data/klienti/{id}/klientiedit', 'App\Http\Controllers\KlientiController@edit');
@@ -63,7 +63,7 @@ Route::post('/data/klienti/{id}/editSumbit', 'App\Http\Controllers\KlientiContro
 Route::get('/data/numuri', 'App\Http\Controllers\numuriController@showAllData');
 //Maršruti numuru dzēšanai
 Route::get('/data/numuri/{id}/delete', 'App\Http\Controllers\numuriController@delete');
-Route::get('/data/numuri/{id}/details', 'App\Http\Controllers\numuriController@details');
+Route::get('/data/numuri/{id}/numuridetails', 'App\Http\Controllers\numuriController@details');
 
 Route::post('/data/NewSubmit', 'App\Http\Controllers\numuriController@NewSubmit');
 Route::get('/data/numuri/{id}/editnumuri', 'App\Http\Controllers\numuriController@edit');
@@ -83,7 +83,7 @@ Route::post('/data/numuri/{id}/editSumbit', 'App\Http\Controllers\numuriControll
 Route::get('/data/rezervacijas', 'App\Http\Controllers\rezervacijasController@showAllData');
 //Maršruti numuru dzēšanai
 Route::get('/data/rezervacijas/{id}/delete', 'App\Http\Controllers\rezervacijasController@delete');
-Route::get('/data/rezervacijas/{id}/details', 'App\Http\Controllers\rezervacijasController@details');
+Route::get('/data/rezervacijas/{id}/rezervacijasdetails', 'App\Http\Controllers\rezervacijasController@details');
 
 Route::post('/data/NewSubmit', 'App\Http\Controllers\rezervacijasController@NewSubmit');
 Route::get('/data/rezervacijas/{id}/editrezervacijas', 'App\Http\Controllers\rezervacijasController@edit');
