@@ -14,7 +14,7 @@
             <p>Cena par nakti: {{$numuri->CenaParNakti}}</p>
             <p>Statuss: {{$numuri->Statuss}}</p>
 
-            <a class="btn btn-light" href="/data/numuri/{{ $numuri->id }}/edit">Rediģēt</a>
+            <a class="btn btn-light" href="/data/numuri/{{ $numuri->id }}/editnumuri">Rediģēt</a>
             <a class="btn btn-light" href="/data/numuri/{{ $numuri->id }}/delete">Dzēst</a>
         </div>
     </div>
