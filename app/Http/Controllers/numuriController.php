@@ -50,7 +50,7 @@ return view  ('numuridetails',['numuri'=>$numuri->find($id)]);
 
 
 
-public function NewSubmit(Request $numuri)
+public function NewSubmit(Request $numuris)
 {
     $numuri->validate([
         'Tips' => 'required|min:3|max:15',
@@ -60,9 +60,9 @@ public function NewSubmit(Request $numuri)
 
     //datu sagl
     $numuri = new numuri();
-    $numuri->Tips = $numuri->input('Tips');
-    $numuri->CenaParNakti = $numuri->input('Cena par nakti');
-    $numuri->Statuss = $numuri->input('Statuss');
+    $numuri->Tips = $numuris->input('Tips');
+    $numuri->CenaParNakti = $numuris->input('Cena par nakti');
+    $numuri->Statuss = $numuris->input('Statuss');
   
     $numuri->save();
 
@@ -82,12 +82,12 @@ public function NewSubmit(Request $numuri)
 
 
 
-  public function editSumbit($id,Request $numuri)
+  public function editSumbit($id,Request $numuris)
   {
 $numuri=numuri::find($id);
-$numuri->Tips = $numuri->input('Tips');
-$numuri->CenaParNakti = $numuri->input('Cena par nakti');
-$numuri->Statuss = $numuri->input('Statuss');
+$numuri->Tips = $numuris->input('Tips');
+$numuri->CenaParNakti = $numuris->input('Cena par nakti');
+$numuri->Statuss = $numuris->input('Statuss');
 $numuri->save();
 return redirect()->to('/data/numuri')->with('success', 'Ieraksts tika izmainīts');
 
