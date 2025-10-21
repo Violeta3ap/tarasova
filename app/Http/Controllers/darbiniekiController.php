@@ -88,27 +88,6 @@ public function NewSubmit(Request $darbinieki)
 
   }  
 
-  public function edit($id)
-    {
-        $data = new Data;
-       return view('edit', ['data' => $data->find($id)]);  
- 
-    }
- 
-    public function editSubmit(Request $dati, $id)
-    {
-
-    $data = Data::find($id);
- 
-    $data->name = $dati->input('name');
-    $data->email = $dati->input('email');
-    $data->subject = $dati->input('subject');
-    $data->message = $dati->input('message');
- 
-    $data->save();
-       
-    return redirect('/data/alldata')->with('success', 'Dati veiksmīgi atjaunoti');
-}
 
 
 
