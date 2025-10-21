@@ -92,6 +92,22 @@ class darbiniekiController extends Controller
 
 
 
+    public function LaukumiSubmit(Request $dati)
+    {
+        $l = new Laukumi();
+        $l->Vards = $dati->input('Vārds');
+        $l->Uzvards = $dati->input('Uzvārds');
+
+        $l->save();
+ 
+        return redirect()->to('/data/darbinieki')->with('success', 'Ieraksts tika pievienots');
+    }
+
+
+
+
+
+
   // public function new()
   //   {     
   //     $types = DB::table('type')->get();
