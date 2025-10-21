@@ -81,8 +81,8 @@ class darbiniekiController extends Controller
   {   
     $darbinieki=darbinieki::find($id);
     
-    $darbinieki->Vards = $darbinieki->input('Vārds');
-    $darbinieki->Uzvards = $darbinieki->input('Uzvārds');
+    $darbinieki->Vards = $darbinieki->input('Vards');
+    $darbinieki->Uzvards = $darbinieki->input('Uzvards');
     $darbinieki->save();
     return redirect('/data/darbinieki')->with('success', 'Ieraksts tika izmainīts');
 
