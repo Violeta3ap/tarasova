@@ -50,7 +50,7 @@ return view  ('klientidetails',['klienti'=>$klienti->find($id)]);
 
 
 
-public function NewSubmit(Request $klienti)
+public function NewSubmit(Request $klientis)
 {
     $klienti->validate([
         'Vards' => 'required|min:3|max:15',
@@ -61,10 +61,10 @@ public function NewSubmit(Request $klienti)
 
     //datu sagl
     $klienti = new klienti();
-    $klienti->Vards = $klienti->input('Vārds');
-    $klienti->Uzvards = $klienti->input('Uzvārds');
-    $klienti->Epasts = $klienti->input('E-pasts');
-    $klienti->TelefonaNumurs = $klienti->input('Telefona numurs');
+    $klienti->Vards = $klientis->input('Vārds');
+    $klienti->Uzvards = $klientis->input('Uzvārds');
+    $klienti->Epasts = $klientis->input('E-pasts');
+    $klienti->TelefonaNumurs = $klientis->input('Telefona numurs');
     $klienti->save();
 
     return redirect('/contact')->with('success', 'Ieraksts pievienots');
@@ -83,17 +83,36 @@ public function NewSubmit(Request $klienti)
 
 
 
-  public function editSumbit($id,Request $klienti)
+  public function editSumbit($id,Request $klientis)
   {
 $klienti=klienti::find($id);
-$klienti->Vards = $klienti->input('Vārds');
-$klienti->Uzvards = $klienti->input('Uzvārds');
-$klienti->Epasts = $klienti->input('E-pasts');
-$klienti->TelefonaNumurs = $klienti->input('Telefona numurs');
+$klienti->Vards = $klientis->input('Vards');
+$klienti->Uzvards = $klientis->input('Uzvards');
+$klienti->Epasts = $klientis->input('E-pasts');
+$klienti->TelefonaNumurs = $klientis->input('Telefona numurs');
 $klienti->save();
 return redirect()->to('/data/klienti')->with('success', 'Ieraksts tika izmainīts');
 
  }  
+
+
+
+
+
+
+    public function JaunsSubmit(Request $klientis)
+    {
+        $l = new Laukumi();
+        $l->Vards = $klientis->input('Vārds');
+        $l->Uzvards = $klientis->input('Uzvārds');
+        $l->Vards = $klientis->input('E-pasts');
+        $l->Uzvards = $klientis->input('TelefonaNumurs');
+        $l->save();
+ 
+        return redirect()->to('/data/klienti')->with('success', 'Ieraksts tika pievienots');
+    }
+
+
 
 
 
