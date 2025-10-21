@@ -105,7 +105,7 @@ Route::post('/data/darbinieki/{id}/editSumbit', 'App\Http\Controllers\darbinieki
 
 // pievienot jaunu ierakstu
 Route::get('/data/darbinieki/jauns', 'App\Http\Controllers\darbiniekiController@create');
-Route::post('/data/darbinieki/jaunsSubmit', 'App\Http\Controllers\darbiniekiController@LaukumiSubmit');
+Route::post('/data/darbinieki/jaunsSubmit', 'App\Http\Controllers\darbiniekiController@JaunsSubmit');
 
 
 

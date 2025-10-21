@@ -6,7 +6,7 @@
 
         <a href="/data" class="btn" style="background-color: #ddb0cfff; color: black;">Atgriezties</a>
 
-   <a href="/darbiniekijauns" class="btn" style="background-color: #ddb0cfff; color: black;">Pievienot</a>
+   <a href="/data/darbinieki/jauns" class="btn" style="background-color: #ddb0cfff; color: black;">Pievienot</a>
     
 
  

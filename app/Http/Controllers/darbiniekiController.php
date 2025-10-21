@@ -92,7 +92,7 @@ class darbiniekiController extends Controller
 
 
 
-    public function LaukumiSubmit(Request $dati)
+    public function JaunsSubmit(Request $dati)
     {
         $l = new Laukumi();
         $l->Vards = $dati->input('Vārds');
