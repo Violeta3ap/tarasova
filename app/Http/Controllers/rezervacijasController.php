@@ -50,7 +50,7 @@ return view  ('rezervacijasdetails',['rezervacijas'=>$rezervacijas->find($id)]);
 
 
 
-public function NewSubmit(Request $rezervacijas)
+public function NewSubmit(Request $rezervacijass)
 {
     $rezervacijas->validate([
         'NumuraID' => 'required|min:3|max:15',
@@ -63,12 +63,12 @@ public function NewSubmit(Request $rezervacijas)
 
     //datu sagl
     $rezervacijas = new rezervacijas();
-    $rezervacijas->NumuraID = $rezervacijas->input('NumuraID');
-    $rezervacijas->KlientaID = $rezervacijas->input('KlientaID');
-    $rezervacijas->IebrauksanasDatums = $rezervacijas->input('Iebraukšanas datums');
-    $rezervacijas->IzbrauksanasDatums = $rezervacijas->input('Izbraukšanas datums');
-        $rezervacijas->RezervacijasStatuss = $rezervacijas->input('Rezervācijas statuss');
-    $rezervacijas->DarbiniekaID = $rezervacijas->input('DarbiniekaID ');
+    $rezervacijas->NumuraID = $rezervacijass->input('NumuraID');
+    $rezervacijas->KlientaID = $rezervacijass->input('KlientaID');
+    $rezervacijas->IebrauksanasDatums = $rezervacijass->input('Iebraukšanas datums');
+    $rezervacijas->IzbrauksanasDatums = $rezervacijass->input('Izbraukšanas datums');
+        $rezervacijas->RezervacijasStatuss = $rezervacijass->input('Rezervācijas statuss');
+    $rezervacijas->DarbiniekaID = $rezervacijass->input('DarbiniekaID ');
     $rezervacijas->save();
 
     return redirect('/contact')->with('success', 'Ieraksts pievienots');
@@ -87,15 +87,15 @@ public function NewSubmit(Request $rezervacijas)
 
 
 
-  public function editSumbit($id,Request $numuri)
+  public function editSumbit($id,Request $rezervacijass)
   {
 $rezervacijas=rezervacijas::find($id);
- $rezervacijas->NumuraID = $rezervacijas->input('NumuraID');
-    $rezervacijas->KlientaID = $rezervacijas->input('KlientaID');
-    $rezervacijas->IebrauksanasDatums = $rezervacijas->input('Iebraukšanas datums');
-    $rezervacijas->IzbrauksanasDatums = $rezervacijas->input('Izbraukšanas datums');
-        $rezervacijas->RezervacijasStatuss = $rezervacijas->input('Rezervācijas statuss');
-    $rezervacijas->DarbiniekaID = $rezervacijas->input('DarbiniekaID ');
+ $rezervacijas->NumuraID = $rezervacijass->input('NumuraID');
+    $rezervacijas->KlientaID = $rezervacijass->input('KlientaID');
+    $rezervacijas->IebrauksanasDatums = $rezervacijass->input('Iebraukšanas datums');
+    $rezervacijas->IzbrauksanasDatums = $rezervacijass->input('Izbraukšanas datums');
+        $rezervacijas->RezervacijasStatuss = $rezervacijass->input('Rezervācijas statuss');
+    $rezervacijas->DarbiniekaID = $rezervacijass->input('DarbiniekaID ');
     $rezervacijas->save();
 return redirect()->to('/data/rezervacijas')->with('success', 'Ieraksts tika izmainīts');
 
