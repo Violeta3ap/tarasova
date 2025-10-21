@@ -5,7 +5,7 @@
  
 <a href="/data/darbinieki" class="btn btn-secondary mb-3">Atpakaļ</a>
  
-<form method="POST" action="/data/darbinieki/darbiniekijauns">
+<form method="POST" action="/data/darbinieki/jaunsSubmit">
     @csrf
     <div class="mb-3">
         <label for="Vards" class="form-label">Vārds</label>
