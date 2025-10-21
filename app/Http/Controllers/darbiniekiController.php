@@ -27,18 +27,18 @@ class darbiniekiController extends Controller
 
 
 
-public function details($id)
-{
-$darbinieki = new darbinieki();
+  public function details($id)
+  {
+  $darbinieki = new darbinieki();
   //dd($data->all());
-return view  ('darbiniekidetails',['darbinieki'=>$darbinieki->find($id)]);
-}
+  return view  ('darbiniekidetails',['darbinieki'=>$darbinieki->find($id)]);
+  }
 
 
 
 
-// public function details($id)
-// {
+//  public function details($id)
+//  {
 //     $data = Data::find($id);
 
 //     if (!$data) {
@@ -46,12 +46,12 @@ return view  ('darbiniekidetails',['darbinieki'=>$darbinieki->find($id)]);
 //     }
 
 //     return view('details',  ['data' => $data->find($id)]);
-// }
+//  }
 
 
 
-public function NewSubmit(Request $darbinieki)
-{
+  public function NewSubmit(Request $darbinieki)
+  {
     $darbinieki->validate([
         'Vards' => 'required|min:3|max:15',
         'Uzvards' => 'required|email|max:20',
@@ -64,7 +64,7 @@ public function NewSubmit(Request $darbinieki)
     $darbinieki->save();
 
     return redirect('/contact')->with('success', 'Ieraksts pievienots');
-}
+  }
 
 
 
@@ -79,12 +79,12 @@ public function NewSubmit(Request $darbinieki)
 
   public function editSumbit(Request $darbinieki, $id)
   {     return dd($dati->all());
-    // $darbinieki=darbinieki::find($id);
+    $darbinieki=darbinieki::find($id);
     
-    // $darbinieki->Vards = $darbinieki->input('Vārds');
-    // $darbinieki->Uzvards = $darbinieki->input('Uzvārds');
-    // $darbinieki->save();
-    // return redirect('/data/darbinieki')->with('success', 'Ieraksts tika izmainīts');
+    $darbinieki->Vards = $darbinieki->input('Vārds');
+    $darbinieki->Uzvards = $darbinieki->input('Uzvārds');
+    $darbinieki->save();
+    return redirect('/data/darbinieki')->with('success', 'Ieraksts tika izmainīts');
 
   }  
 
@@ -92,24 +92,16 @@ public function NewSubmit(Request $darbinieki)
 
 
 
+  // public function new()
+  //   {     
+  //     $types = DB::table('type')->get();
+  //     // dd($types->get());
 
 
-
-
-
-
-
-
-public function new()
-    {     
-      $types = DB::table('type')->get();
-      // dd($types->get());
-
-
-      return view('contacts', ['types' =>$types ]);
+  //     return view('contacts', ['types' =>$types ]);
 
      
-    }
+  //   }
 
 
 
