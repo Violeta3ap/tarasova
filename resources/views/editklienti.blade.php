@@ -112,8 +112,7 @@
 </div>
 
 <button type="submit" class="btn" style="background-color: #fff; color: #000; border: 1px solid #000;">Saglabāt izmaiņas</button>
-<a href="/data/klienti" class="btn" style="background-color: #fff; color: #000; border: 1px solid #000;">Atcelt</a>
-
+<a href="/data/allData" class="btn" style="background-color: #fff; color: #000; border: 1px solid #000;">Atcelt</a>
 </div>
 @endsection
 </form>s

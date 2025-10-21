@@ -16,7 +16,7 @@
             <p>Izbraukšanas datums: {{$rezervacijas->IzbrauksanasDatums}}</p>
             <p>Rezervācijas statuss: {{$rezervacijas->RezervacijasStatuss}}</p>
             <p>DarbiniekaID: {{$rezervacijas->DarbiniekaID}}</p>
-            <a class="btn btn-light" href="/data/rezervacijas/{{ $rezervacijas->id }}/edit">Rediģēt</a>
+            <a class="btn btn-light" href="/data/rezervacijas/{{ $rezervacijas->id }}/editrezervacijas">Rediģēt</a>
             <a class="btn btn-light" href="/data/rezervacijas/{{ $rezervacijas->id }}/delete">Dzēst</a>
         </div>
     </div>

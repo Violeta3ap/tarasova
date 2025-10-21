@@ -81,7 +81,7 @@ public function NewSubmit(Request $rezervacijas)
   public function edit($id)
   {
     $rezervacijas = new rezervacijas;
-    return view('edit', ['rezervacijas' => $rezervacijas->find($id)]);
+    return view('editrezervacijas', ['rezervacijas' => $rezervacijas->find($id)]);
   }
 
 

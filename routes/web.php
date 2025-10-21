@@ -85,6 +85,6 @@ Route::get('/data/rezervacijas/{id}/delete', 'App\Http\Controllers\rezervacijasC
 Route::get('/data/rezervacijas/{id}/details', 'App\Http\Controllers\rezervacijasController@details');
 
 Route::post('/data/NewSubmit', 'App\Http\Controllers\rezervacijasController@NewSubmit');
-Route::get('/data/rezervacijas/{id}/edit', 'App\Http\Controllers\rezervacijasController@edit');
+Route::get('/data/rezervacijas/{id}/editrezervacijas', 'App\Http\Controllers\rezervacijasController@edit');
 //maršrutu izmaiņu sagl
 Route::post('/data/rezervacijas/{id}/editSumbit', 'App\Http\Controllers\rezervacijasController@editSumbit');

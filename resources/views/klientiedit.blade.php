@@ -20,7 +20,7 @@
 
 
 
-<form action="/ data/{{ $klienti->id }}/editSumbit" method="post">
+<form action="/ data/{{ $klienti->id }}/edit" method="post">
     @csrf
 
       <div style="text-align: center;">
