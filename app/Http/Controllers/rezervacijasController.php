@@ -31,7 +31,7 @@ public function details($id)
 {
 $rezervacijas = new rezervacijas();
   //dd($data->all());
-return view  ('details',['rezervacijas'=>$rezervacijas->find($id)]);
+return view  ('rezervacijasdetails',['rezervacijas'=>$rezervacijas->find($id)]);
 }
 
 

@@ -30,7 +30,7 @@ public function details($id)
 {
 $darbinieki = new darbinieki();
   //dd($data->all());
-return view  ('details',['darbinieki'=>$darbinieki->find($id)]);
+return view  ('darbiniekidetails',['darbinieki'=>$darbinieki->find($id)]);
 }
 
 
