@@ -76,7 +76,7 @@ public function NewSubmit(Request $numuri)
   public function edit($id)
   {
     $numuri = new numuri;
-    return view('edit', ['numuri' => $numuri->find($id)]);
+    return view('editnumuri', ['numuri' => $numuri->find($id)]);
   }
 
 
