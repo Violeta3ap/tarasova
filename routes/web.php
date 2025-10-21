@@ -98,7 +98,6 @@ Route::get('/data/darbinieki', 'App\Http\Controllers\darbiniekiController@showAl
 Route::get('/data/darbinieki/{id}/delete', 'App\Http\Controllers\darbiniekiController@delete');
 Route::get('/data/darbinieki/{id}/details', 'App\Http\Controllers\darbiniekiController@details');
 
-Route::post('/data/NewSubmit', 'App\Http\Controllers\darbiniekiController@NewSubmit');
 Route::get('/data/darbinieki/{id}/darbiniekiedit', 'App\Http\Controllers\darbiniekiController@edit');
 //maršrutu izmaiņu sagl
 Route::post('/data/darbinieki/{id}/editSumbit', 'App\Http\Controllers\darbiniekiController@editSumbit');
