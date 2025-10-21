@@ -104,3 +104,45 @@ Route::get('/data/darbinieki/{id}/darbiniekiedit', 'App\Http\Controllers\darbini
 Route::post('/data/darbinieki/{id}/editSumbit', 'App\Http\Controllers\darbiniekiController@editSumbit');
 
 
+
+
+
+//maršruts datu lapai ar autorizāciju
+Route::get('/data/allData', 'App\Http\Controllers\DataController@showAllData')->middleware('auth');
+
+
+//maršruts login formai
+Route::get('/login', function () {
+    return view('login');
+})->name('login');
+
+
+
+//maršruts login formas apstrādei
+Route::post('/loginp', 'App\Http\Controllers\LoginController@login');
+
+// Parbaudei
+// if (Auth::check()) {
+//     // Lietotājs ir autentificēts
+//     // return redirect()->intended('allData');
+// } else {
+//     // Lietotājs nav autentificēts
+//     // return redirect('login');
+// }
+
+//reģistrācijai
+Route::post('/register', 'App\Http\Controllers\LoginController@register');   
+
+//izrakstīšanai
+route::get('/logout', function () {
+    Auth::logout();
+    request()->session()->invalidate(); //sesijas neitralizēšana
+    request()->session()->regenerateToken();  //regeneret CSRF tokenu
+    return redirect('/');
+})->name('logout');
+
+
+
+
+
+
