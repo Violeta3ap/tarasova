@@ -20,23 +20,22 @@ Route::get('/data', function () {
 });
  
 
-//darbinieki
+//darbinieki Data
  
- 
-Route::get('/data/allData', 'App\Http\Controllers\DataController@showAllData');
-//Maršruti darbinieku dzēšanai
-Route::get('/data/allData/{id}/delete', 'App\Http\Controllers\DataController@delete');
-Route::get('/data/allData/{id}/details', 'App\Http\Controllers\DataController@details');
-//jauns ziņojums
-//Rout::post('data/NewSumbit', function() {
- //   return "Pievienot jaunu ireakstu";
- //   return dd(Request::all());
-//});s
-Route::post('/data/NewSubmit', 'App\Http\Controllers\DataController@NewSubmit');
+// Route::get('/data/allData', 'App\Http\Controllers\DataController@showAllData');
+// //Maršruti darbinieku dzēšanai
+// Route::get('/data/allData/{id}/delete', 'App\Http\Controllers\DataController@delete');
+// Route::get('/data/allData/{id}/details', 'App\Http\Controllers\DataController@details');
+// //jauns ziņojums
+// //Rout::post('data/NewSumbit', function() {
+//  //   return "Pievienot jaunu ireakstu";
+//  //   return dd(Request::all());
+// //});s
+// Route::post('/data/NewSubmit', 'App\Http\Controllers\DataController@NewSubmit');
 
-Route::get('/data/allData/{id}/edit', 'App\Http\Controllers\DataController@edit');
-//maršrutu izmaiņu sagl
-Route::post('/data/allData/{id}/editSumbit', 'App\Http\Controllers\DataController@editSumbit');
+// Route::get('/data/allData/{id}/edit', 'App\Http\Controllers\DataController@edit');
+// //maršrutu izmaiņu sagl
+// Route::post('/data/allData/{id}/editSumbit', 'App\Http\Controllers\DataController@editSumbit');
 
 
 
@@ -89,3 +88,19 @@ Route::post('/data/NewSubmit', 'App\Http\Controllers\rezervacijasController@NewS
 Route::get('/data/rezervacijas/{id}/editrezervacijas', 'App\Http\Controllers\rezervacijasController@edit');
 //maršrutu izmaiņu sagl
 Route::post('/data/rezervacijas/{id}/editSumbit', 'App\Http\Controllers\rezervacijasController@editSumbit');
+
+
+
+//darbinieki
+
+Route::get('/data/darbinieki', 'App\Http\Controllers\darbiniekiController@showAllData');
+//Maršruti darbinieki dzēšanai
+Route::get('/data/darbinieki/{id}/delete', 'App\Http\Controllers\darbiniekiController@delete');
+Route::get('/data/darbinieki/{id}/details', 'App\Http\Controllers\darbiniekiController@details');
+
+Route::post('/data/NewSubmit', 'App\Http\Controllers\darbiniekiController@NewSubmit');
+Route::get('/data/darbinieki/{id}/darbiniekidetails', 'App\Http\Controllers\darbiniekiController@edit');
+//maršrutu izmaiņu sagl
+Route::post('/data/darbinieki/{id}/editSumbit', 'App\Http\Controllers\darbiniekiController@editSumbit');
+
+
