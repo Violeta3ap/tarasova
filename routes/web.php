@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
   use App\Http\Controllers\DataController;
    use App\Http\Controllers\numuriController;
   use App\Http\Controllers\rezervacijasController;
+    use App\Http\Controllers\darbiniekiController;
  
 Route::get('/', function () {
     return view('home');
