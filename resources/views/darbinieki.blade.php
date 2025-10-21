@@ -6,7 +6,7 @@
 
         <a href="/data" class="btn" style="background-color: #ddb0cfff; color: black;">Atgriezties</a>
 
-
+   <a href="/darbiniekijauns" class="btn" style="background-color: #ddb0cfff; color: black;">Pievienot</a>
     
 
  
@@ -25,6 +25,7 @@
 
             <a href="/data/darbinieki/{{$item->id}}/delete" class="btn btn-light">Dzēst</a>
             <a href="/data/darbinieki/{{$item->id}}/details" class="btn btn-light">Detalizētais</a>
+        
 
  
 
