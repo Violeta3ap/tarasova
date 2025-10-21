@@ -18,9 +18,9 @@
 @endif
 
 
-<form method="POST" action="/data/numuri/{{ $numuri->id }}/editnumuri">
+<!-- <form method="POST" action="/data/numuri/{{ $numuri->id }}/editnumuri"> -->
 
-<!-- <form action="/data/numuri{{ $numuri->id }}/editnumuri" method="post"> -->
+<form action="/data/numuri{{ $numuri->id }}/editnumuri" method="post">
     @csrf
 
       <div style="text-align: center;">
