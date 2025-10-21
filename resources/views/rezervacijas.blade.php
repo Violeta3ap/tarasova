@@ -24,8 +24,8 @@
 
 
 
-            <a href="/data/klienti/{{$item->id}}/delete" class="btn btn-light">Dzēst</a>
-            <a href="/data/klienti/{{$item->id}}/details" class="btn btn-light">Detalizētais</a>
+            <a href="/data/rezervacijas/{{$item->id}}/delete" class="btn btn-light">Dzēst</a>
+            <a href="/data/rezervacijas/{{$item->id}}/details" class="btn btn-light">Detalizētais</a>
 
  
         </div>
