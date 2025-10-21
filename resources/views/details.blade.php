@@ -3,7 +3,7 @@
 @extends('layout.app')
 
 @section('content')
-    <h2>Detalizētie darbinieku dati</h2>
+    <!-- <h2>Detalizētie darbinieku dati</h2>
       <div class="d-flex justify-content mt-4">
         <a href="/data/allData" class="btn" style="background-color: #ddb0cfff; color: black;">Atgriezties</a>
     </div>
@@ -16,7 +16,7 @@
             <a class="btn btn-light" href="/data/allData/{{ $Darbinieki->id }}/edit">Rediģēt</a>
             <a class="btn btn-light" href="/data/allData/{{ $Darbinieki->id }}/delete">Dzēst</a>
         </div>
-    </div>
+    </div> -->
   
     <style>
         body {
