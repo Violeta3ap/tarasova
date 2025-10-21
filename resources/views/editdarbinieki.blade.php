@@ -20,7 +20,7 @@
 
 
 
-<form action="/ data/{{ $darnimieki->id }}/darbiniekiedit" method="post">
+<form action="/ data/{{ $darbinieki->id }}/darbiniekiedit" method="post">
     @csrf
 
       <div style="text-align: center;">
