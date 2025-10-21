@@ -99,7 +99,7 @@ Route::get('/data/darbinieki/{id}/delete', 'App\Http\Controllers\darbiniekiContr
 Route::get('/data/darbinieki/{id}/details', 'App\Http\Controllers\darbiniekiController@details');
 
 Route::post('/data/NewSubmit', 'App\Http\Controllers\darbiniekiController@NewSubmit');
-Route::get('/data/darbinieki/{id}/darbiniekidetails', 'App\Http\Controllers\darbiniekiController@edit');
+Route::get('/data/darbinieki/{id}/darbiniekiedit', 'App\Http\Controllers\darbiniekiController@edit');
 //maršrutu izmaiņu sagl
 Route::post('/data/darbinieki/{id}/editSumbit', 'App\Http\Controllers\darbiniekiController@editSumbit');
 
