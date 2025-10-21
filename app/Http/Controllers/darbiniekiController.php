@@ -78,7 +78,7 @@ class darbiniekiController extends Controller
 
 
   public function editSumbit(Request $darbinieki, $id)
-  {     return dd($dati->all());
+  {   
     $darbinieki=darbinieki::find($id);
     
     $darbinieki->Vards = $darbinieki->input('Vārds');
