@@ -19,6 +19,13 @@
     <a href="/data/rezervacijas" class="btn btn-success mx-2" style="background-color: #ddb0cfff; border: none; color: black;">
         Dati par rezervācijam
     </a>
+
+
+      <a href="/data/login" class="btn btn-success mx-2" style="background-color: #ddb0cfff; border: none; color: black;">
+        Dati par rezervācijam
+    </a>
+
+
 </div>
 
     
