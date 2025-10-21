@@ -77,18 +77,47 @@ public function NewSubmit(Request $darbinieki)
   }
 
 
-
-
-  public function editSumbit($id,Request $darbinieki)
-  {
-    $darbinieki=darbinieki::find($id);
-    dd($darbinieki);
-    $darbinieki->Vards = $darbinieki->input('Vārds');
-    $darbinieki->Uzvards = $darbinieki->input('Uzvārds');
-    $darbinieki->save();
-    return redirect('/data/darbinieki')->with('success', 'Ieraksts tika izmainīts');
+  public function editSumbit(Request $darbinieki, $id)
+  {     return dd($dati->all());
+    // $darbinieki=darbinieki::find($id);
+    
+    // $darbinieki->Vards = $darbinieki->input('Vārds');
+    // $darbinieki->Uzvards = $darbinieki->input('Uzvārds');
+    // $darbinieki->save();
+    // return redirect('/data/darbinieki')->with('success', 'Ieraksts tika izmainīts');
 
   }  
+
+  public function edit($id)
+    {
+        $data = new Data;
+       return view('edit', ['data' => $data->find($id)]);  
+ 
+    }
+ 
+    public function editSubmit(Request $dati, $id)
+    {
+
+    $data = Data::find($id);
+ 
+    $data->name = $dati->input('name');
+    $data->email = $dati->input('email');
+    $data->subject = $dati->input('subject');
+    $data->message = $dati->input('message');
+ 
+    $data->save();
+       
+    return redirect('/data/alldata')->with('success', 'Dati veiksmīgi atjaunoti');
+}
+
+
+
+
+
+
+
+
+
 
 
 
