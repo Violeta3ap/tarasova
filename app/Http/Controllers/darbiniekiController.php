@@ -80,10 +80,10 @@ public function NewSubmit(Request $darbinieki)
 
   public function editSumbit($id,Request $darbinieki)
   {
-$klienti=klienti::find($id);
-$klienti->Vards = $klienti->input('Vārds');
-$klienti->Uzvards = $klienti->input('Uzvārds');
-$klienti->save();
+$darbinieki=darbinieki::find($id);
+$darbinieki->Vards = $darbinieki->input('Vārds');
+$darbinieki->Uzvards = $darbinieki->input('Uzvārds');
+$darbinieki->save();
 return redirect()->to('/data/darbinieki')->with('success', 'Ieraksts tika izmainīts');
 
  }  
