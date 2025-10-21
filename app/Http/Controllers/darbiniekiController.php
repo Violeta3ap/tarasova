@@ -81,15 +81,14 @@ public function NewSubmit(Request $darbinieki)
 
   public function editSumbit($id,Request $darbinieki)
   {
-$darbinieki=darbinieki::find($id);
-dd($darbinieki);
-$darbinieki->Vards = $darbinieki->input('Vārds');
-$darbinieki->Uzvards = $darbinieki->input('Uzvārds');
-$darbinieki->save();
+    $darbinieki=darbinieki::find($id);
+    dd($darbinieki);
+    $darbinieki->Vards = $darbinieki->input('Vārds');
+    $darbinieki->Uzvards = $darbinieki->input('Uzvārds');
+    $darbinieki->save();
+    return redirect('/data/darbinieki')->with('success', 'Ieraksts tika izmainīts');
 
-return redirect('/data/darbinieki')->with('success', 'Ieraksts tika izmainīts');
-
- }  
+  }  
 
 
 
