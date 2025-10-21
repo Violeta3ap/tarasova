@@ -31,7 +31,7 @@ public function details($id)
 {
 $klienti = new klienti();
   //dd($data->all());
-return view  ('klientidetails',['klienti'=>$klienti->find($id)]);
+return view  ('details',['klienti'=>$klienti->find($id)]);
 }
 
 

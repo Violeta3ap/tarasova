@@ -31,7 +31,7 @@ public function details($id)
 {
 $numuri = new numuri();
   //dd($data->all());
-return view  ('numuridetails',['numuri'=>$numuri->find($id)]);
+return view  ('details',['numuri'=>$numuri->find($id)]);
 }
 
 
