@@ -65,7 +65,7 @@ Route::get('/data/numuri/{id}/delete', 'App\Http\Controllers\numuriController@de
 Route::get('/data/numuri/{id}/details', 'App\Http\Controllers\numuriController@details');
 
 Route::post('/data/NewSubmit', 'App\Http\Controllers\numuriController@NewSubmit');
-Route::get('/data/numuri/{id}/edit', 'App\Http\Controllers\numuriController@edit3');
+Route::get('/data/numuri/{id}/edit.numuri', 'App\Http\Controllers\numuriController@edit3');
 //maršrutu izmaiņu sagl
 Route::post('/data/numuri/{id}/editSumbit', 'App\Http\Controllers\numuriController@editSumbit');
 
