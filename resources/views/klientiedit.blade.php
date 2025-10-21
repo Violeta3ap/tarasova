@@ -20,7 +20,7 @@
 
 
 
-<form action="/ data/{{ $klienti->id }}/edit" method="post">
+<form action="/ data/{{ $klienti->id }}/klientiedit" method="post">
     @csrf
 
       <div style="text-align: center;">
@@ -43,9 +43,8 @@
 </div>
 
 
-
-<button type="submit" class="btn btn-primary">Saglabāt izmaiņas</button>
-<a href="/data/klienti"  class="btn btn-danger">Atcelt</a>
+<button type="submit" class="btn" style="background-color: #fff; color: #000; border: 1px solid #000;">Saglabāt izmaiņas</button>
+<a href="/data/allData" class="btn" style="background-color: #fff; color: #000; border: 1px solid #000;">Atcelt</a>
 
 </div>
 @endsection
