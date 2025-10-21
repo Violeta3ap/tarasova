@@ -102,6 +102,11 @@
      <label for="Uzards" class="form-label"> Uzvārds </label>
     <input type= "text" class="form-control" value="{{$klienti->Uzards}}" id="Uzards" name="Uzards" placeholder="Ievadiet uzvārdu">
 
+ <label for="Epasts" class="form-label"> E-pasts </label>
+    <input type= "text" class="form-control" value="{{$klienti->Epasts}}" id="Epasts" name="Epasts" placeholder="Ievadiet e-pastu">
+
+     <label for="TelefonaNumurs" class="form-label"> Telefona numurs </label>
+    <input type= "text" class="form-control" value="{{$klienti->TelefonaNumurs}}" id="TelefonaNumurs" name="TelefonaNumurs" placeholder="Ievadiet telefona numuru">
 
 
 </div>
