@@ -83,7 +83,7 @@ public function NewSubmit(Request $klientis)
 
 
 
-  public function editSumbit($id,Request $klientis)
+  public function editSumbit(Request $klientis, $id)
   {
 $klienti=klienti::find($id);
 $klienti->Vards = $klientis->input('Vards');

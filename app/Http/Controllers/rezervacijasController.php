@@ -87,7 +87,7 @@ public function NewSubmit(Request $rezervacijass)
 
 
 
-  public function editSumbit($id,Request $rezervacijass)
+  public function editSumbit(Request $rezervacijass, $id)
   {
 $rezervacijas=rezervacijas::find($id);
  $rezervacijas->NumuraID = $rezervacijass->input('NumuraID');
