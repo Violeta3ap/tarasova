@@ -1,7 +1,7 @@
 @extends('layout.app')
  
 @section('content')
-<h3>Pievienot jaunu laukumu</h3>
+<h3>Pievienot jaunu pierakstu</h3>
  
 <a href="/data/darbinieki" class="btn btn-secondary mb-3">Atpakaļ</a>
  
