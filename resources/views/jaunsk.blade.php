@@ -19,7 +19,7 @@
 
  
      <div class="mb-3">
-        <label for="Epasts" class="form-label">Vārds</label>
+        <label for="Epasts" class="form-label">Epasts</label>
         <input type="text" class="form-control" id="Epasts" name="Epasts" required>
     </div>
  
