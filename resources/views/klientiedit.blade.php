@@ -21,7 +21,7 @@
 
 
 
-<form action="/ data/klienti{{ $klienti->id }}/editSumbit" method="post">
+<form action="/data/klienti{{ $klienti->id }}/editSumbit" method="post">
     @csrf
 
       <div style="text-align: center;">
