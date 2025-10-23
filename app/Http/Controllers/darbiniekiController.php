@@ -95,8 +95,8 @@ class darbiniekiController extends Controller
     public function JaunsSubmit(Request $darbiniekis)
     {
         $darbinieki = new darbinieki();
-        $darbinieki->Vards = $darbiniekis->input('Vārds');
-        $darbinieki->Uzvards = $darbiniekis->input('Uzvārds');
+        $darbinieki->Vards = $darbiniekis->input('Vards');
+        $darbinieki->Uzvards = $darbiniekis->input('Uzvards');
 
         $darbinieki->save();
  
