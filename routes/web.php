@@ -53,11 +53,11 @@ Route::get('/data/klienti/{id}/klientiedit', 'App\Http\Controllers\KlientiContro
 Route::post('/data/klienti/{id}/editSumbit', 'App\Http\Controllers\KlientiController@editSumbit');
 
 
-Route::post('/data/klienti/jaunsSubmit', 'App\Http\Controllers\KlientiController@JaunsSubmit')
+Route::post('/data/klienti/jaunsSubmit', 'App\Http\Controllers\KlientiController@JaunsSubmit');
 
-// Route::get('/data/klienti/jaunsk', function () {
-//     return view('jaunsk');
-// });
+Route::get('/data/klienti/jaunsk', function () {
+    return view('jaunsk');
+});
 
 
 
@@ -75,7 +75,7 @@ Route::get('/data/numuri/{id}/editnumuri', 'App\Http\Controllers\numuriControlle
 //maršrutu izmaiņu sagl
 Route::post('/data/numuri/{id}/editSumbit', 'App\Http\Controllers\numuriController@editSumbit');
 
-Route::post('/data/numuri/jaunsSubmit', 'App\Http\Controllers\numuriController@JaunsSubmit')
+Route::post('/data/numuri/jaunsSubmit', 'App\Http\Controllers\numuriController@JaunsSubmit');
 
 Route::get('/data/numuri/jaunsn', function () {
     return view('jaunsn');
@@ -103,7 +103,7 @@ Route::post('/data/rezervacijas/{id}/editSumbit', 'App\Http\Controllers\rezervac
 
 
 
-Route::post('/data/rezervacijas/jaunsSubmit', 'App\Http\Controllers\rezervacijasController@JaunsSubmit')
+Route::post('/data/rezervacijas/jaunsSubmit', 'App\Http\Controllers\rezervacijasController@JaunsSubmit');
 
 Route::get('/data/rezervacijas/jaunsr', function () {
     return view('jaunsr');
