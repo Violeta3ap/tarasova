@@ -8,6 +8,7 @@
 
 
     
+   <a href="/data/klienti/jaunsk" class="btn" style="background-color: #ddb0cfff; color: black;">Pievienot</a>
 
  
  <div style="display: flex; flex-wrap: wrap; gap: 16px;">

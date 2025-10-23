@@ -88,8 +88,8 @@ public function NewSubmit(Request $klientis)
   $klienti=klienti::find($id);
   $klienti->Vards = $klientis->input('Vards');
   $klienti->Uzvards = $klientis->input('Uzvards');
-  $klienti->Epasts = $klientis->input('E-pasts');
-  $klienti->TelefonaNumurs = $klientis->input('Telefona numurs');
+  $klienti->Epasts = $klientis->input('Epasts');
+  $klienti->TelefonaNumurs = $klientis->input('TelefonaNumurs');
   $klienti->save();
   return redirect()->to('/data/klienti')->with('success', 'Ieraksts tika izmainīts');
 
@@ -100,33 +100,20 @@ public function NewSubmit(Request $klientis)
 
 
 
+   
     public function JaunsSubmit(Request $klientis)
     {
-        $l = new Laukumi();
-        $l->Vards = $klientis->input('Vārds');
-        $l->Uzvards = $klientis->input('Uzvārds');
-        $l->Vards = $klientis->input('E-pasts');
-        $l->Uzvards = $klientis->input('TelefonaNumurs');
-        $l->save();
+        $klienti = new darbinieki();
+        $klienti->Vards = $klientis->input('Vards');
+        $klienti->Uzvards = $klientis->input('Uzvards');
+
+                $klienti->Vards = $klientis->input('Epasts');
+        $klienti->Uzvards = $klientis->input('TelefonaNumurs');
+
+        $klienti->save();
  
         return redirect()->to('/data/klienti')->with('success', 'Ieraksts tika pievienots');
     }
-
-
-
-
-
-public function new()
-    {     
-      $types = DB::table('type')->get();
-      // dd($types->get());
-
-
-      return view('contacts', ['types' =>$types ]);
-
-     
-    }
-
 
 };
 
