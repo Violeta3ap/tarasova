@@ -94,11 +94,11 @@ class darbiniekiController extends Controller
 
     public function JaunsSubmit(Request $darbiniekis)
     {
-        $l = new darbinieki();
-        $l->Vards = $darbiniekis->input('Vārds');
-        $l->Uzvards = $darbiniekis->input('Uzvārds');
+        $darbinieki = new darbinieki();
+        $darbinieki->Vards = $darbiniekis->input('Vārds');
+        $darbinieki->Uzvards = $darbiniekis->input('Uzvārds');
 
-        $l->save();
+        $darbinieki->save();
  
         return redirect()->to('/data/darbinieki')->with('success', 'Ieraksts tika pievienots');
     }
