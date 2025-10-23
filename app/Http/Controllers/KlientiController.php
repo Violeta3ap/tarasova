@@ -103,7 +103,7 @@ public function NewSubmit(Request $klientis)
    
     public function JaunsSubmit(Request $klientis)
     {
-        $klienti = new darbinieki();
+        $klienti = new klienti();
         $klienti->Vards = $klientis->input('Vards');
         $klienti->Uzvards = $klientis->input('Uzvards');
 

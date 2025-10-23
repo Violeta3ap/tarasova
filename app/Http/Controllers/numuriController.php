@@ -100,7 +100,7 @@ return redirect()->to('/data/numuri')->with('success', 'Ieraksts tika izmaints')
 
     public function JaunsSubmit(Request $numuris)
     {
-        $numuri = new darbinieki();
+        $numuri = new numuri();
         $numuri->Tips = $numuris->input('Tips');
         $numuri->CenaParNakti = $numuris->input('CenaParNakti');
         $numuri->Statuss = $numuris->input('Statuss');
