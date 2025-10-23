@@ -91,6 +91,17 @@ Route::post('/data/rezervacijas/{id}/editSumbit', 'App\Http\Controllers\rezervac
 
 
 
+
+Route::post('/data/rezervacijas/jaunsSubmit', 'App\Http\Controllers\rezervacijasController@JaunsSubmit')
+
+Route::get('/data/rezervacijas/jaunsr', function () {
+    return view('jaunsr');
+});
+
+
+
+
+
 //darbinieki
 
 Route::get('/data/darbinieki', 'App\Http\Controllers\darbiniekiController@showAllData');

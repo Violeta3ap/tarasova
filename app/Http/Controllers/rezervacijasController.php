@@ -92,9 +92,9 @@ public function NewSubmit(Request $rezervacijass)
   $rezervacijas=rezervacijas::find($id);
  $rezervacijas->NumuraID = $rezervacijass->input('NumuraID');
     $rezervacijas->KlientaID = $rezervacijass->input('KlientaID');
-    $rezervacijas->IebrauksanasDatums = $rezervacijass->input('Iebraukšanas datums');
-    $rezervacijas->IzbrauksanasDatums = $rezervacijass->input('Izbraukšanas datums');
-        $rezervacijas->RezervacijasStatuss = $rezervacijass->input('Rezervācijas statuss');
+    $rezervacijas->IebrauksanasDatums = $rezervacijass->input('IebrauksanasDatums');
+    $rezervacijas->IzbrauksanasDatums = $rezervacijass->input('IzbrauksanasDatums');
+        $rezervacijas->RezervacijasStatuss = $rezervacijass->input('RezervacijasStatuss');
     $rezervacijas->DarbiniekaID = $rezervacijass->input('DarbiniekaID ');
     $rezervacijas->save();
   return redirect()->to('/data/rezervacijas')->with('success', 'Ieraksts tika izmainīts');
@@ -104,15 +104,20 @@ public function NewSubmit(Request $rezervacijass)
 
 
 
-public function new()
-    {     
-      $types = DB::table('type')->get();
-      // dd($types->get());
+    public function JaunsSubmit(Request $rezervacijass)
+    {
+        $rezervacijas = new rezervacijas();
+        $rezervacijas->NumuraID = $rezervacijass->input('NumuraID');
+        $rezervacijas->KlientaID = $rezervacijass->input('KlientaID');
+        $rezervacijas->IebrauksanasDatums = $rezervacijass->input('IebrauksanasDatums');
+        $rezervacijas->IzbrauksanasDatums = $rezervacijass->input('IzbrauksanasDatums');
+        $rezervacijas->RezervacijasStatuss = $rezervacijass->input('RezervacijasStatuss');
+        $rezervacijas->DarbiniekaID = $rezervacijass->input('DarbiniekaID');
 
-
-      return view('contacts', ['types' =>$types ]);
-
-     
+        $rezervacijas->save();
+ 
+        return redirect()->to('/data/rezervacijas')->with('success', 'Ieraksts tika pievienots');
     }
+
 
 };
