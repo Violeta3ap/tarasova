@@ -85,13 +85,13 @@ public function NewSubmit(Request $klientis)
 
   public function editSumbit(Request $klientis, $id)
   {
-$klienti=klienti::find($id);
-$klienti->Vards = $klientis->input('Vards');
-$klienti->Uzvards = $klientis->input('Uzvards');
-$klienti->Epasts = $klientis->input('E-pasts');
-$klienti->TelefonaNumurs = $klientis->input('Telefona numurs');
-$klienti->save();
-return redirect()->to('/data/klienti')->with('success', 'Ieraksts tika izmainīts');
+  $klienti=klienti::find($id);
+  $klienti->Vards = $klientis->input('Vards');
+  $klienti->Uzvards = $klientis->input('Uzvards');
+  $klienti->Epasts = $klientis->input('E-pasts');
+  $klienti->TelefonaNumurs = $klientis->input('Telefona numurs');
+  $klienti->save();
+  return redirect()->to('/data/klienti')->with('success', 'Ieraksts tika izmainīts');
 
  }  
 

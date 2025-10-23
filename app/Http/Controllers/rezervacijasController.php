@@ -89,7 +89,7 @@ public function NewSubmit(Request $rezervacijass)
 
   public function editSumbit(Request $rezervacijass, $id)
   {
-$rezervacijas=rezervacijas::find($id);
+  $rezervacijas=rezervacijas::find($id);
  $rezervacijas->NumuraID = $rezervacijass->input('NumuraID');
     $rezervacijas->KlientaID = $rezervacijass->input('KlientaID');
     $rezervacijas->IebrauksanasDatums = $rezervacijass->input('Iebraukšanas datums');
@@ -97,7 +97,7 @@ $rezervacijas=rezervacijas::find($id);
         $rezervacijas->RezervacijasStatuss = $rezervacijass->input('Rezervācijas statuss');
     $rezervacijas->DarbiniekaID = $rezervacijass->input('DarbiniekaID ');
     $rezervacijas->save();
-return redirect()->to('/data/rezervacijas')->with('success', 'Ieraksts tika izmainīts');
+  return redirect()->to('/data/rezervacijas')->with('success', 'Ieraksts tika izmainīts');
 
  }  
 
