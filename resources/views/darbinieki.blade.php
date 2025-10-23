@@ -25,6 +25,7 @@
 
             <a href="/data/darbinieki/{{$item->id}}/delete" class="btn btn-light">Dzēst</a>
             <a href="/data/darbinieki/{{$item->id}}/details" class="btn btn-light">Detalizētais</a>
+            
         
 
  
