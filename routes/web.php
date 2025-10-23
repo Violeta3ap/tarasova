@@ -69,6 +69,11 @@ Route::get('/data/numuri/{id}/editnumuri', 'App\Http\Controllers\numuriControlle
 //maršrutu izmaiņu sagl
 Route::post('/data/numuri/{id}/editSumbit', 'App\Http\Controllers\numuriController@editSumbit');
 
+Route::post('/data/numuri/jaunsSubmit', 'App\Http\Controllers\numuriController@JaunsSubmit')
+
+Route::get('/data/numuri/jaunsn', function () {
+    return view('jaunsn');
+});
 
 
 

@@ -5,7 +5,7 @@
     <h3>Numuru dati</h3>
 
         <a href="/data" class="btn" style="background-color: #ddb0cfff; color: black;">Atgriezties</a>
-
+   <a href="/data/numuri/jaunsn" class="btn" style="background-color: #ddb0cfff; color: black;">Pievienot</a>
  
  <div style="display: flex; flex-wrap: wrap; gap: 16px;">
 @foreach ($data as $item)

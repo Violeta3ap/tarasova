@@ -89,23 +89,26 @@ public function NewSubmit(Request $numuris)
   {
 $numuri=numuri::find($id);
 $numuri->Tips = $numuris->input('Tips');
-$numuri->CenaParNakti = $numuris->input('Cena par nakti');
+$numuri->CenaParNakti = $numuris->input('CenaParNakti');
 $numuri->Statuss = $numuris->input('Statuss');
 $numuri->save();
-return redirect()->to('/data/numuri')->with('success', 'Ieraksts tika izmainīts');
+return redirect()->to('/data/numuri')->with('success', 'Ieraksts tika izmaints');
 
  }  
 
 
-public function new()
-    {     
-      $types = DB::table('type')->get();
-      // dd($types->get());
+
+    public function JaunsSubmit(Request $numuris)
+    {
+        $numuri = new darbinieki();
+        $numuri->Tips = $numuris->input('Tips');
+        $numuri->CenaParNakti = $numuris->input('CenaParNakti');
+        $numuri->Statuss = $numuris->input('Statuss');
 
 
-      return view('contacts', ['types' =>$types ]);
-
-     
+        $numuri->save();
+ 
+        return redirect()->to('/data/numuri')->with('success', 'Ieraksts tika pievienots');
     }
 
 
