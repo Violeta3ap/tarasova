@@ -55,9 +55,9 @@ Route::post('/data/klienti/{id}/editSumbit', 'App\Http\Controllers\KlientiContro
 
 Route::post('/data/klienti/jaunsSubmit', 'App\Http\Controllers\KlientiController@JaunsSubmit')
 
-Route::get('/data/klienti/jaunsk', function () {
-    return view('jaunsk');
-});
+// Route::get('/data/klienti/jaunsk', function () {
+//     return view('jaunsk');
+// });
 
 
 
